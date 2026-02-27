@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.game-container {
+    background: rgba(240, 222, 151, 0.689);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    max-width: 800px;
+    text-align: center;
+}
+
+.photo-frame img {
+    max-width: 100%;
+    height: auto;
+    border: 5px solid #333;
+    border-radius: 4px;
+}
+
+.input-group {
+    margin: 20px 0;
+}
+
+input[type="number"] {
+    padding: 10px;
+    font-size: 1.1rem;
+    width: 100px;
+}
+
+.map-submit {
+    width: 100%; /* La carte prend toute la largeur du conteneur */
+    max-width: 700px;
+    border: 2px solid #ccc;
+    cursor: crosshair; /* Change le curseur en viseur */
+    transition: 0.3s;
+}
+
+.map-submit:hover {
+    border-color: #007BFF;
+}
+
+.global-page {
+    /*background-color: rgb(252, 170, 93);*/
+}
