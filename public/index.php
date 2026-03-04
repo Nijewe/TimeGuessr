@@ -1,17 +1,17 @@
 <?php
+session_start();
 
+$page = isset($_GET['page']) ? $_GET['page'] : 'home';
 
-    session start();
+$pages = [
+    'home'   => '../src/home.php',
+    'quiz'   => '../src/quiz.php',
+    'answer' => '../src/answer.php',
+    'end'    => '../src/end.php',
+];
 
-    require_once("../src/home.php");
-
-    $paths = [
-        'answer' => '../src/answer.php',
-        'end'=> '',
-    ]
-
-
-    session_destroy();
-
-
-?>
+if (array_key_exists($page, $pages)) {
+    require_once $pages[$page];
+} else {
+    require_once '../src/home.php';
+}
